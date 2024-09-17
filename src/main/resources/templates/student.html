@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="student-container">
+        <h2>Student Dashboard</h2>
+        <nav>
+            <a href="/assignments">View Assignments</a>
+            <a href="/submissions">Submit Assignments</a>
+        </nav>
+        <h3>Assignments</h3>
+        <!-- This can be a list of assignments -->
+        <div id="assignments-list">
+            <!-- Assignments will be listed here -->
+        </div>
+        <h3>Submit Assignment</h3>
+        <form action="/submissions" method="post">
+            <div class="form-group">
+                <label for="assignmentId">Assignment ID</label>
+                <input type="text" id="assignmentId" name="assignmentId" required>
+            </div>
+            <div class="form-group">
+                <label for="fileUrl">Submission URL</label>
+                <input type="text" id="fileUrl" name="fileUrl" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

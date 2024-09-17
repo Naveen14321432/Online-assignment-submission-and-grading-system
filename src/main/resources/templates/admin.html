@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="admin-container">
+        <h2>Admin Dashboard</h2>
+        <nav>
+            <a href="/assignments">Manage Assignments</a>
+            <a href="/users">Manage Users</a>
+        </nav>
+        <h3>Assignment Management</h3>
+        <form action="/assignments" method="post">
+            <div class="form-group">
+                <label for="title">Assignment Title</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="deadline">Deadline</label>
+                <input type="date" id="deadline" name="deadline" required>
+            </div>
+            <button type="submit">Add Assignment</button>
+        </form>
+    </div>
+</body>
+</html>
